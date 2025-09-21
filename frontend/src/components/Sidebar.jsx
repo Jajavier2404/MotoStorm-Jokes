@@ -56,8 +56,8 @@ function Sidebar() {
         {/* Header */}
         <div className="flex items-center justify-between p-4 border-b border-gray-700">
           {!isCollapsed && (
-            <h2 className="text-xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
-              Mi App
+            <h2 className="text-xl ml-4 font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
+              Moto-storm J
             </h2>
           )}
           <button
@@ -101,10 +101,6 @@ function Sidebar() {
                       </span>
                     )}
                     
-                    {/* Active indicator */}
-                    {active && (
-                      <div className="absolute right-2 w-2 h-2 bg-white rounded-full" />
-                    )}
                   </Link>
 
                   {/* Tooltip for collapsed state */}
@@ -123,7 +119,7 @@ function Sidebar() {
         <div className="absolute bottom-4 left-4 right-4">
           {!isCollapsed && (
             <div className="text-xs text-gray-400 text-center border-t border-gray-700 pt-4">
-              © 2025 Mi Aplicación
+              © 2025 MotoStorm Jokes
             </div>
           )}
         </div>

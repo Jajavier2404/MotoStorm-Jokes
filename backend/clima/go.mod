@@ -1,3 +1,3 @@
-module weather-api
+module project
 
 go 1.24.0

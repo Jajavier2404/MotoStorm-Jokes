@@ -223,10 +223,10 @@ const WeatherApp = () => {
         </div>
 
         {/* Panel de ciudades populares */}
-        <div className="bg-white bg-opacity-95 backdrop-blur-lg rounded-3xl shadow-2xl p-6 w-80 flex-shrink-0">
+        <div className="bg-white bg-opacity-95 backdrop-blur-lg rounded-3xl shadow-2xl p-6 w-80 flex-shrink-0 self-start">
           <div className="mb-6">
-            <h3 className="text-xl font-bold text-green-800 mb-2 flex items-center gap-2">
-              🌍 Ciudades Populares
+            <h3 className="text-xl  font-bold text-green-800 mb-2 flex items-center gap-2">
+              Ciudades Populares
             </h3>
             <p className="text-green-600 text-sm">
               Haz click en cualquier ciudad para ver su clima
