@@ -84,7 +84,7 @@ function Sidebar() {
                     to={item.path}
                     onClick={() => setIsMobileOpen(false)}
                     className={`
-                      flex items-center gap-3 px-3 py-3 rounded-lg transition-all duration-200 group relative
+                      flex items-center gap-3 px-[6Ñpx] py-3  rounded-lg transition-all duration-200 group relative 
                       ${active 
                         ? 'bg-blue-600 text-white shadow-lg shadow-blue-600/25' 
                         : 'hover:bg-gray-700 text-gray-300 hover:text-white'
@@ -93,7 +93,7 @@ function Sidebar() {
                   >
                     <IconComponent 
                       size={20} 
-                      className={`flex-shrink-0 transition-colors ${active ? 'text-white' : 'text-gray-400 group-hover:text-white'}`}
+                      className={`flex-shrink-0 transition-colors  ${active ? 'text-white' : 'text-gray-400 group-hover:text-white'}`}
                     />
                     {!isCollapsed && (
                       <span className="font-medium transition-colors">
