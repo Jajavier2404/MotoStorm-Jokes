@@ -3,6 +3,7 @@ import Sidebar from './components/Sidebar';
 import Jokes from './pages/Jokes';
 import CarStore from './pages/CarStore';
 import Meteorogia from './pages/Meteorogia';
+import Home from './pages/home';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
           <Route path="/jokes" element={<Jokes />} />
           <Route path="/car-store" element={<CarStore />} />
           <Route path="/weather" element={<Meteorogia />} />
+          <Route path="/" element={<Home />} />
         </Routes>
       </main>
     </div>
