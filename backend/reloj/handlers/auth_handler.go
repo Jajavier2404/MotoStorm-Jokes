@@ -2,7 +2,7 @@ package handlers
 
 import (
 	"encoding/json"
-	"motostorm-jokes/backend/reloj/models"
+	//"motostorm-jokes/backend/reloj/models"
 	"motostorm-jokes/backend/reloj/services"
 	"net/http"
 	"time"
@@ -10,7 +10,8 @@ import (
 	"github.com/golang-jwt/jwt/v5"
 )
 
-var jwtKey = []byte("my_secret_key") // Replace with a strong secret key
+var JwtKey = []byte("my_secret_key") // Replace with a strong secret key
+
 
 type Credentials struct {
 	Email    string `json:"email"`
@@ -71,7 +72,7 @@ func LoginHandler(w http.ResponseWriter, r *http.Request) {
 	}
 
 	token := jwt.NewWithClaims(jwt.SigningMethodHS256, claims)
-	tokenString, err := token.SignedString(jwtKey)
+	tokenString, err := token.SignedString(JwtKey)
 	if err != nil {
 		http.Error(w, "Failed to create token", http.StatusInternalServerError)
 		return

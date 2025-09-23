@@ -33,6 +33,6 @@ func main() {
 		})
 	}
 
-	fmt.Println("Servidor de Relojes corriendo en http://localhost:8081")
-	log.Fatal(http.ListenAndServe(":8081", corsHandler(http.DefaultServeMux)))
+	fmt.Println("Servidor de Relojes corriendo en http://localhost:8082")
+	log.Fatal(http.ListenAndServe(":8082", corsHandler(http.DefaultServeMux)))
 }
