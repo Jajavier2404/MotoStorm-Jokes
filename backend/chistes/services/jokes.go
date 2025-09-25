@@ -15,7 +15,7 @@ func GetJoke() (*models.JokeResponse, error) {
         return nil, err
     }
     defer resp.Body.Close()
-
+    
     var chuckJoke models.ChuckNorrisJoke
     if err := json.NewDecoder(resp.Body).Decode(&chuckJoke); err != nil {
         return nil, err
